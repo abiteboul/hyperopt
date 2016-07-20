@@ -296,7 +296,7 @@ def fmin(fn, space, algo, max_evals, trials=None, rstate=None,
             rstate = np.random.RandomState()
 
     if allow_trials_fmin and hasattr(trials, 'fmin'):
-        return trials.fmin(
+        return trials.fmin1(
             fn, space,
             algo=algo,
             max_evals=max_evals,

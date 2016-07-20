@@ -597,7 +597,7 @@ class Trials(object):
                 rval[k] = v[0]
         return rval
 
-    def fmin(self, fn, space, algo, max_evals,
+    def fmin1(self, fn, space, algo, max_evals,
              rstate=None,
              verbose=0,
              pass_expr_memo_ctrl=None,
